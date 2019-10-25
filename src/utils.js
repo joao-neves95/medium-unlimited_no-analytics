@@ -1,6 +1,5 @@
 import config from './config';
 import {setUserId, getUserId} from './storage';
-import {track} from './analytics';
 import {MEMBERSHIP_PROMPT_CLASSNAME} from './constants';
 
 export function log(...messages) {
@@ -22,7 +21,6 @@ export function init() {
   chrome.runtime.onInstalled.addListener(() => {
     if (!getUserId()) {
       setUserId(new Date().getTime().toString());
-      track('INSTALLED');
     }
   });
 }

@@ -1,6 +1,5 @@
 import intercept from './cookie_interceptors'; //Importing just to make sure the interceptors are registered.
 import {log, init, hasMembershipPrompt} from './utils';
-import {track} from './analytics';
 import {incrementReadCountAndGet, getUserId} from './storage';
 import {FETCH_CONTENT_MESSAGE, FETCH_USER_ID} from './constants';
 
@@ -26,7 +25,6 @@ function _processUserIdRequest(sendResponse) {
 
 function _processContentRequest(request, sendResponse) {
   log('Fetching content for', request.url);
-  track('REQUESTED');
   _fetch(request.url)
     .then(async responseData => {
       const doc = document.createElement('html');
@@ -42,21 +40,9 @@ function _processContentRequest(request, sendResponse) {
         isGoogleResult = true;
       }
       sendResponse({ status: 'SUCCESS', content, counter, hadMembershipPrompt, externalUrl });
-      let trackStatus = 'SUCCESS';
-      if (hadMembershipPrompt) {
-        if (externalUrl && !isGoogleResult) {
-          trackStatus = 'PARTIAL-SUCCESS';
-        } else if (externalUrl && isGoogleResult) {
-          trackStatus = 'SERP-SUCCESS';
-        } else {
-          trackStatus = 'PARTIAL-FAILED';
-        }
-      }
-      track(trackStatus);
     })
     .catch(error => {
       sendResponse({status: 'ERROR', error: JSON.stringify(error)});
-      track('FAILED');
     });
   return true;
 }
