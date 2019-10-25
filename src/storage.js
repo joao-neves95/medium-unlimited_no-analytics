@@ -1,11 +1,11 @@
-import {USER_ID_KEY, READ_COUNT_KEY} from './constants';
+import {USER_ID, USER_ID_KEY, READ_COUNT_KEY} from './constants';
 
 export function setUserId(id) {
-  window.localStorage.setItem(USER_ID_KEY, id);
+  return;
 }
 
 export function getUserId() {
-  return window.localStorage.getItem(USER_ID_KEY);
+  return USER_ID;
 }
 
 export function incrementReadCountAndGet() {
