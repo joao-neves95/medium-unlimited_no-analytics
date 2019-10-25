@@ -1,6 +1,6 @@
 {
-  "name": "medium-unlimited",
-  "version": "1.0.0",
+  "name": "medium-unlimited_no-analytics",
+  "version": "1.4.11",
   "description": "A chrome extension to unlock medium.com paywall",
   "main": "index.js",
   "scripts": {
