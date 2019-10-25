@@ -3,7 +3,7 @@
   "description": "Unlocks medium.com for unlimited reads, no membership required",
   "short_name": "Medium Unlimited - No Analytics",
   "version": "1.4.11",
-  "manifest_version": 3,
+  "manifest_version": 2,
   "background": {
     "scripts": ["background.bundle.js"]
   },
