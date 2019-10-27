@@ -2,10 +2,15 @@
 
 This is the fork of [Medium Unlimited](https://github.com/manojVivek/medium-unlimited), where it was deleted all tracking function calls.
 
+To install on Firefox use the .xpi file on the dist folder.
+
+Also, good for reference on development: [web-ext-build](https://extensionworkshop.com/documentation/develop/web-ext-command-reference/#web-ext-build)
+
 ---
 
-# Medium Unlimited   [![Tweet](https://img.shields.io/twitter/url/http/shields.io.svg?style=social)](https://twitter.com/intent/tweet?text=Yay!!%20I%20found%20this%20open%20source%20chrome%20extension%20to%20read%20Medium.com%20membership%20articles%20for%20free!%20%0ACheck%20it%20out%20-%20&url=https://github.com/manojVivek/medium-unlimited&hashtags=medium,membership,free,github,oss,opensource)
+# Original README:
 
+# Medium Unlimited   [![Tweet](https://img.shields.io/twitter/url/http/shields.io.svg?style=social)](https://twitter.com/intent/tweet?text=Yay!!%20I%20found%20this%20open%20source%20chrome%20extension%20to%20read%20Medium.com%20membership%20articles%20for%20free!%20%0ACheck%20it%20out%20-%20&url=https://github.com/manojVivek/medium-unlimited&hashtags=medium,membership,free,github,oss,opensource)
 
 Code repository for the browser extension to unlock the articles behind the medium.com membership paywall.
 
