@@ -2,7 +2,9 @@
 
 This is the fork of [Medium Unlimited](https://github.com/manojVivek/medium-unlimited), where it was deleted all tracking function calls.
 
-To install on Firefox use the .xpi file on the dist folder.
+To install on Firefox use the .xpi file on the "release/" folder.
+
+To install on Chrome follow the steps on the Original README.
 
 Also, good for reference on development: [web-ext-build](https://extensionworkshop.com/documentation/develop/web-ext-command-reference/#web-ext-build)
 
