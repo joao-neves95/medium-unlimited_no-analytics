@@ -2,7 +2,7 @@
   "name": "Medium Unlimited - No Analytics",
   "description": "Unlocks medium.com for unlimited reads, no membership required",
   "short_name": "Medium Unlimited - No Analytics",
-  "version": "1.0.1",
+  "version": "1.1.0",
   "manifest_version": 2,
   "background": {
     "scripts": ["background.bundle.js"]
@@ -32,7 +32,20 @@
         "https://blog.prototypr.io/*",
         "https://thebolditalic.com/*",
         "https://blog.usejournal.com/*",
-        "https://blog.angularindepth.com/*"
+        "https://blog.angularindepth.com/*",
+        "https://blog.bitsrc.io/*",
+        "https://blog.devartis.com/*",
+        "https://blog.maddevs.io/*",
+        "https://blog.getambassador.io/*",
+        "https://uxplanet.org/*",
+        "https://instagram-engineering.com/*",
+        "https://calia.me/*",
+        "https://productcoalition.com/*",
+        "https://engineering.opsgenie.com/*",
+        "https://android.jlelse.eu/*",
+        "https://robinhood.engineering/*",
+        "https://blog.hipolabs.com/*",
+        "https://ux.shopify.com/*"
       ],
       "js": ["main.bundle.js"]
     }
@@ -42,7 +55,7 @@
     "48": "static/logo_48.png",
     "128": "static/logo_128.png"
   },
-  "content_security_policy": "script-src 'self' 'unsafe-eval'; object-src 'self'",
+  "content_security_policy": "script-src 'self'; object-src 'self'",
   "permissions": [
     "webRequest",
     "webRequestBlocking",
@@ -64,7 +77,20 @@
     "https://blog.prototypr.io/*",
     "https://thebolditalic.com/*",
     "https://blog.usejournal.com/*",
-    "https://blog.angularindepth.com/*"
+    "https://blog.angularindepth.com/*",
+    "https://blog.bitsrc.io/*",
+    "https://blog.devartis.com/*",
+    "https://blog.maddevs.io/*",
+    "https://blog.getambassador.io/*",
+    "https://uxplanet.org/*",
+    "https://instagram-engineering.com/*",
+    "https://calia.me/*",
+    "https://productcoalition.com/*",
+    "https://engineering.opsgenie.com/*",
+    "https://android.jlelse.eu/*",
+    "https://robinhood.engineering/*",
+    "https://blog.hipolabs.com/*",
+    "https://ux.shopify.com/*"
   ],
   "web_accessible_resources": ["static/*"]
 }

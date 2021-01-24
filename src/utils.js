@@ -9,13 +9,6 @@ export function log(...messages) {
   console.log(...messages);
 }
 
-export function amplitudeApiKey() {
-  if (process.env.NODE_ENV === 'production') {
-    return config.amplitude.api_key;
-  }
-  return 'test_api_key';
-}
-
 export function init() {
   return;
 }
